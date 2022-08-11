@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:codigo_prod",
+ "creation": "2022-08-09 12:39:51.885867",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "codigo_prod",
+  "familia",
+  "nombre",
+  "precio",
+  "foto"
+ ],
+ "fields": [
+  {
+   "fieldname": "codigo_prod",
+   "fieldtype": "Data",
+   "label": "Codigo",
+   "unique": 1
+  },
+  {
+   "fieldname": "familia",
+   "fieldtype": "Data",
+   "label": "Familia"
+  },
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "label": "Nombre"
+  },
+  {
+   "fieldname": "precio",
+   "fieldtype": "Barcode",
+   "label": "Precio"
+  },
+  {
+   "fieldname": "foto",
+   "fieldtype": "Attach Image",
+   "label": "Foto"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-09 12:39:51.885867",
+ "modified_by": "Administrator",
+ "module": "mod_empleado",
+ "name": "Productos",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

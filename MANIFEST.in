@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include cafeteria_app *.css
+recursive-include cafeteria_app *.csv
+recursive-include cafeteria_app *.html
+recursive-include cafeteria_app *.ico
+recursive-include cafeteria_app *.js
+recursive-include cafeteria_app *.json
+recursive-include cafeteria_app *.md
+recursive-include cafeteria_app *.png
+recursive-include cafeteria_app *.py
+recursive-include cafeteria_app *.svg
+recursive-include cafeteria_app *.txt
+recursive-exclude cafeteria_app *.pyc

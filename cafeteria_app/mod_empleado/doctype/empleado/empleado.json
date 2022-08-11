@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-08-09 08:37:12.855816",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "n\u00famero_de_identidad",
+  "nombre",
+  "apellidos",
+  "huella",
+  "foto",
+  "codigo_dep",
+  "nombre_departamento"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "Codigo",
+   "options": "EMP-"
+  },
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "label": "Nombres"
+  },
+  {
+   "fieldname": "huella",
+   "fieldtype": "Data",
+   "label": "Huella"
+  },
+  {
+   "fieldname": "foto",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "foto"
+  },
+  {
+   "fieldname": "n\u00famero_de_identidad",
+   "fieldtype": "Data",
+   "label": "N\u00famero de Identidad"
+  },
+  {
+   "fieldname": "apellidos",
+   "fieldtype": "Data",
+   "label": "Apellidos"
+  },
+  {
+   "fieldname": "codigo_dep",
+   "fieldtype": "Link",
+   "label": "Departamento",
+   "options": "Departamento"
+  },
+  {
+   "fetch_from": "codigo_dep.nombre",
+   "fieldname": "nombre_departamento",
+   "fieldtype": "Data",
+   "label": "Nombre Departamento",
+   "read_only": 1
+  }
+ ],
+ "image_field": "foto",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-09 13:10:26.641689",
+ "modified_by": "Administrator",
+ "module": "mod_empleado",
+ "name": "Empleado",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
