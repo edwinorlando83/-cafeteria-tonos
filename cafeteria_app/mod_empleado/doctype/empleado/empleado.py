@@ -5,4 +5,5 @@
 from frappe.model.document import Document
 
 class Empleado(Document):
-	pass
+	def validate(self):
+		self.nombres_completo = self.nombre + " " + self.apellidos

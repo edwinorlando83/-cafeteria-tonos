@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_rename": 1,
  "autoname": "naming_series:",
  "creation": "2022-08-09 08:37:12.855816",
  "doctype": "DocType",
@@ -11,10 +10,13 @@
   "n\u00famero_de_identidad",
   "nombre",
   "apellidos",
+  "nombres_completo",
+  "nombre_departamento",
+  "telefono",
   "huella",
-  "foto",
+  "column_break_7",
   "codigo_dep",
-  "nombre_departamento"
+  "foto"
  ],
  "fields": [
   {
@@ -62,12 +64,27 @@
    "fieldtype": "Data",
    "label": "Nombre Departamento",
    "read_only": 1
+  },
+  {
+   "fieldname": "nombres_completo",
+   "fieldtype": "Data",
+   "label": "Nombre Completo",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono"
   }
  ],
  "image_field": "foto",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-09 13:10:26.641689",
+ "modified": "2022-08-11 09:12:37.097318",
  "modified_by": "Administrator",
  "module": "mod_empleado",
  "name": "Empleado",
@@ -86,6 +103,8 @@
    "write": 1
   }
  ],
+ "search_fields": "nombres_completo",
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "title_field": "nombres_completo"
 }
